@@ -20,6 +20,7 @@ const AuthorItem = ({ author }) => {
 }
 const AuthorList = ({ authors }) => {
     return (
+    <div class="container-lg mt-auto">  
         <table>
             <th>
                 First name
@@ -32,6 +33,7 @@ const AuthorList = ({ authors }) => {
             </th>
             {authors.map((author) => <AuthorItem author={author} />)}
         </table>
+    </div>    
     )
 }
 
