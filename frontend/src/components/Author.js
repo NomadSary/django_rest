@@ -20,20 +20,23 @@ const AuthorItem = ({ author }) => {
 }
 const AuthorList = ({ authors }) => {
     return (
-    <div class="container-lg mt-auto">  
-        <table>
-            <th>
-                First name
-            </th>
-            <th>
-                Last Name
-            </th>
-            <th>
-                Birthday year
-            </th>
-            {authors.map((author) => <AuthorItem author={author} />)}
-        </table>
-    </div>    
+        <div class="container-lg mt-auto">
+            <table class="table">
+                <th>
+                    User name
+                </th>
+                <th>
+                    First name
+                </th>
+                <th>
+                    Last Name
+                </th>
+                <th>
+                    Email
+                </th>
+                {authors.map((author) => <AuthorItem author={author} />)}
+            </table>
+        </div>
     )
 }
 
