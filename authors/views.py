@@ -1,6 +1,5 @@
 from rest_framework.renderers import JSONRenderer
 from rest_framework.viewsets import ModelViewSet
-from django.conf import settings
 from .models import User
 from .serializers import UserModelSerializer
 
