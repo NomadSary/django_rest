@@ -6,7 +6,7 @@ from authors.models import User
 class Project(models.Model):
     project_name = models.CharField(max_length=64, unique = True);    
     authors = models.ManyToManyField(settings.AUTH_USER_MODEL);
-    uls_repo = models.URLField(blank = True);
+    uls_repo = models.URLField(blank = True, unique = False, null = True);
 
     def __str__(self):
         return self.project_name
