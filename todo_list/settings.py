@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'authors',
     'TODO',
     'django_filters',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
