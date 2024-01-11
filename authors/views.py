@@ -8,6 +8,6 @@ from rest_framework import mixins
 
 
 class UserModelViewSet(mixins.UpdateModelMixin, mixins.ListModelMixin,
-mixins.RetrieveModelMixin, viewsets.GenericViewSet):
+                       mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     queryset = User.objects.all()
     serializer_class = UserModelSerializer

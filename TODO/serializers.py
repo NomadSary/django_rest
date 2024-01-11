@@ -13,7 +13,8 @@ class ProjectModelSerializer(ModelSerializer):
 class TODOModelSerializer(ModelSerializer):
     class Meta:
         model = TODO  
-        exclude=('active',)   
+        fields = '__all__'
+          
         
 
 
